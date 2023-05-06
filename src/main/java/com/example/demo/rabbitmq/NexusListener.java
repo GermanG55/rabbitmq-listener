@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class NexusListener {
-    @RabbitListener(queues = {"la fila"})
+    @RabbitListener(queues = {"appQueue"})
     public void Nucleous(String application){
         System.out.println("Procesando la request de " + application);
     }
